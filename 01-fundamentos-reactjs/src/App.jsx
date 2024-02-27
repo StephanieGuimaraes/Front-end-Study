@@ -1,10 +1,9 @@
 import { Post } from "./Post";
+import { Header } from "./components/Header";
 
 export function App() {
   return (
-    <div>
-      <Post />
-    </div>
+    <Header/>
   )
 }
 
