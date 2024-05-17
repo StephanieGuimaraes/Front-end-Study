@@ -35,6 +35,13 @@ ul li a:hover {
 h1, ul {
     font-family: "Mulish", sans-serif;
 }
+
+main {
+    display: flex;
+    align-items: "center";
+    justify-content: space-between;
+}
+
 h1{
     font-size: 49px;
     line-height: 56px;
@@ -47,20 +54,36 @@ h1 span {
     font-weight: bold;
 }
 
-p {
+section p {
     font-size: 14px;
     line-height: 28px;
     color: #7D7987;
+    margin: 40px 0px;
 }
 
 button {
+    display: flex;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
+    background-color: #69B99D;
+    border-radius: 4px;
+    border: none;
+    padding: 14px 32px 15px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #3dba8e;
 }
 
 footer {
     font-size: 14px;
     line-height: 28px;
+    text-align: center;
+    margin-top: 80px;
 }
 
 footer a {
