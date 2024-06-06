@@ -26,7 +26,10 @@
                     <legend>Informações do evento</legend>
                     <div class="input-wrapper">
                         <label for="event-title" id="event-title">Título do evento <span>(mínimo 8 caracteres)</span> </label>
-                        <input type="text" id="event-title" />
+                        <input 
+                            type="text" 
+                            id="event-title" 
+                            required/>
                     </div>
                     <div class="input-wrapper">
                         <label for="event-link" id="event-link">Link do evento <span>(comece com https://)</span> </label>
@@ -90,8 +93,8 @@
             <input 
                 class="button" 
                 type="submit" 
-                value="Salvar evento"
-                form="my-form">
+                form="my-form"
+                value="Salvar evento">
         </footer>
     </div>
 </body>
