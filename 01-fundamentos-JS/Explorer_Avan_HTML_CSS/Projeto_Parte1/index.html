@@ -20,7 +20,7 @@
             </h1>
             <p>O primeiro passo é preencher esse formulário de inscrição</p>
         </header>
-        <form>
+        <form id="my-form">
             <fieldset>
                 <div class="fieldset-wrapper">
                     <legend>Informações do evento</legend>
@@ -84,7 +84,15 @@
                     </div>
                 </div>
             </fieldset>
+            
         </form>
+        <footer>
+            <input 
+                class="button" 
+                type="submit" 
+                value="Salvar evento"
+                form="my-form">
+        </footer>
     </div>
 </body>
 </html>
