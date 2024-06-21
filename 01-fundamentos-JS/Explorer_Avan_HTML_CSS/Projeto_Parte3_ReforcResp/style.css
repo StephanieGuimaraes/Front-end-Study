@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    font-family: 'Source Serif Pro';
+}
 .recipe{
     background-color: aqua;
 }
