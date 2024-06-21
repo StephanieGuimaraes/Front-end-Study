@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 :root{
     font-family: 'Source Serif Pro';
 }
-.recipe{
-    background-color: aqua;
+
+button{
+    font-family: 'Source Serif 4';
+    font-weight: 500;
 }
