@@ -34,4 +34,5 @@ h2{
 p, li, strong {
     font-size: 1.4rem;
     line-height: 1.8rem;
+    background-color: aqua;
 }
