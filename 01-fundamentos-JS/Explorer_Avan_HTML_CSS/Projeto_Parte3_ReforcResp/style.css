@@ -59,3 +59,9 @@ ul, ol {
 ul{
     margin-bottom: 2.4rem;
 }
+
+@media (min-width: 770px){
+    body{
+        color: red
+    }
+}
