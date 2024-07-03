@@ -8,3 +8,40 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+main{
+    border: 1px solid red;
+    display: grid;
+    grid-template-areas: 
+    "A A A A"
+    "B C C C"
+    "B D E F"
+    "B D E F"
+    "B G G G"
+    ;
+    height: 100vh;
+}
+div{
+    border: 1px solid blue;
+}
+
+div:nth-child(1){
+    grid-area: A;
+}
+div:nth-child(2){
+    grid-area: B;
+}
+div:nth-child(3){
+    grid-area: C;
+}
+div:nth-child(4){
+    grid-area: D;
+}
+div:nth-child(5){
+    grid-area: E;
+}
+div:nth-child(6){
+    grid-area: F;
+}
+div:nth-child(7){
+    grid-area: G;
+}
