@@ -11,14 +11,14 @@
 main{
     border: 1px solid red;
     display: grid;
-    grid-template-areas: 
-    "A A A A"
-    "B C C C"
-    "B D E F"
-    "B D E F"
-    "B G G G"
-    ;
+    grid-template: 
+    "A A A A" 64px
+    "B C C C" 120px 
+    "B D E F" 
+    "B D E F" 
+    "B G G G" 120px / 1fr 1 fr 1fr 1fr ;
     height: 100vh;
+    padding: 0 64px;
 }
 div{
     border: 1px solid blue;
