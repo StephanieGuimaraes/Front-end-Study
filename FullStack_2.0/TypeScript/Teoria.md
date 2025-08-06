@@ -83,3 +83,17 @@ type Size = "small" | "medium" | "large"
 let size: Size
 
 size = "small"
+
+//-----------------------------------------------------------------
+Enums-----------------------------------------
+
+Nessa aula, aprenderemos a utilizar Enums no TypeScript para nomear constantes, melhorando a legibilidade do código. Vamos criar uma Enum chamada Profile, atribuindo valores como Admin (1), Cliente (2) e Vendedor (3). Ao utilizar Enum, podemos substituir números por constantes, facilitando a compreensão do código. Enum é útil para evitar "números mágicos" e tornar o código mais legível, especialmente para novos membros da equipe.
+
+enum Profile {
+    Admin = 1,
+    Client = 2,
+    Seller = 3
+}
+
+let profile: number = Profile.Admin
+console.log(Profile.Seller)
