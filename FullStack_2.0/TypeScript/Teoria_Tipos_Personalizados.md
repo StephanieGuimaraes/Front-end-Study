@@ -97,3 +97,34 @@ enum Profile {
 
 let profile: number = Profile.Admin
 console.log(Profile.Seller)
+
+//---------------------------------------------------------------------
+Generic---------------------------------------
+
+ /**
+ * S => State
+ * T => Type
+ * K => Key
+ * V => Value
+ * E => Element
+ */
+
+
+function useState<T>(){
+    let state: T;
+
+    function get(){
+        return state;
+    }
+
+    function set(newValue: T){
+        state = newValue;
+    }
+    
+    return {get, set};
+}
+
+let newState = useState();
+useState.get();
+newState.set('Steph');
+console.log("teste: ", newState.get())
