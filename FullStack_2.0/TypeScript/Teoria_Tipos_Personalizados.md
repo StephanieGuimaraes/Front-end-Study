@@ -128,3 +128,59 @@ let newState = useState();
 useState.get();
 newState.set('Steph');
 console.log("teste: ", newState.get())
+
+
+
+/* ===========================================
+   📌 TIPOS PRIMITIVOS NO TYPESCRIPT
+   =========================================== */
+
+/* ---------- STRING ---------- */
+let name: string = "Steph"       // Texto
+// name = 123  // ❌ Erro: número não é string
+
+/* ---------- NUMBER ---------- */
+let age: number = 29             // Inteiro
+let price: number = 7.5          // Decimal
+// age = "texto" // ❌ Erro: string não é number
+
+/* ---------- BOOLEAN ---------- */
+let isActive: boolean = true     // true ou false
+// isActive = "yes" // ❌ Erro
+
+/* ---------- ANY (⚠️ usar com cuidado) ---------- */
+let data: any = "texto"
+data = 10
+data = false
+// Aceita qualquer valor, mas perde segurança
+
+/* ---------- UNDEFINED ---------- */
+let user: undefined = undefined  // Variável sem valor
+
+/* ---------- NULL ---------- */
+let result: null = null          // Ausência proposital de valor
+
+/* ---------- UNKNOWN ---------- */
+let value: unknown = 10
+// Precisa checar o tipo antes de usar:
+if (typeof value === "number") {
+  console.log(value.toFixed(2))
+}
+
+/* ---------- VOID ---------- */
+function logMessage(): void {
+  console.log("Não retorna nada")
+}
+
+/* ---------- NEVER ---------- */
+function error(): never {
+  throw new Error("Falhou!")
+}
+
+/* ===========================================
+   💡 DICAS RÁPIDAS
+   1. Prefira tipagem explícita quando o tipo não for óbvio
+   2. Use inferência quando o valor inicial já deixa claro o tipo
+   3. Evite 'any' sempre que possível
+   4. Variável sem tipo e sem valor => tipo 'any'
+   =========================================== */

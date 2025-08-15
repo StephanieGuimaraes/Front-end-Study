@@ -92,3 +92,31 @@ com um objeto declarado dessa forma o typescript vai inferir que os tipos das va
 6. O que o TypeScript faz quando não definimos o tipo de uma variável e não atribuimos valor inicial? Qual é o tipo padrão atribuído?
 
 Quando você declara uma variável sem atribuir valor e sem definir o tipo, o TypeScript não atribui undefined como tipo, mas sim o tipo especial any. O valor inicial será undefined, mas o tipo será any.
+
+
+//---------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------
+7. Crie uma variável isAdmin com tipagem explícita boolean e atribua true a ela.
+Depois, tente atribuir uma string para ver o erro que o TypeScript retorna.
+
+let isAdmin: boolean = true
+isAdmin = "sim" // ❌ Type 'string' is not assignable to type 'boolean'
+
+//---------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------
+8. Crie uma variável username sem definir o tipo explicitamente, atribuindo o valor "Stephanie".
+Depois, tente atribuir um número a essa variável e observe o erro.
+
+let username = "Stephanie" // inferência: string
+username = 123 // ❌ Type 'number' is not assignable to type 'string'
+
+//---------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------
+9. Crie uma variável data sem valor inicial e sem definir tipo.
+Atribua a ela primeiro um número, depois uma string e por fim um boolean, e explique qual o tipo que o TypeScript considera nessa situação.
+
+Se você declara assim:
+
+let data;
+
+O valor final pode até ser boolean, mas o tipo continua sendo any durante todo o tempo. Isso é perigoso porque o TS deixa de verificar compatibilidade de tipos.
